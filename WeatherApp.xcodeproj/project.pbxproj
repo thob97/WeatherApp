@@ -14,6 +14,7 @@
 		01CA645A2AAA12620016BA5A /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA64592AAA12620016BA5A /* WeatherAppTests.swift */; };
 		01CA64642AAA12620016BA5A /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA64632AAA12620016BA5A /* WeatherAppUITests.swift */; };
 		01CA64662AAA12620016BA5A /* WeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA64652AAA12620016BA5A /* WeatherAppUITestsLaunchTests.swift */; };
+		01CA64732AAA12990016BA5A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA64722AAA12990016BA5A /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		01CA645F2AAA12620016BA5A /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01CA64632AAA12620016BA5A /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		01CA64652AAA12620016BA5A /* WeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01CA64722AAA12990016BA5A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				01CA644F2AAA12620016BA5A /* Preview Assets.xcassets */,
+				01CA64722AAA12990016BA5A /* MainView.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01CA644A2AAA12610016BA5A /* ContentView.swift in Sources */,
+				01CA64732AAA12990016BA5A /* MainView.swift in Sources */,
 				01CA64482AAA12610016BA5A /* WeatherAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
