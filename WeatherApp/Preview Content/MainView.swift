@@ -48,7 +48,7 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView().previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro Max"))
+        MainView()
     }
 }
 
@@ -195,7 +195,7 @@ struct WeekdaysWeather: View {
     let columns: [GridItem] = [GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible())]
     
     var body: some View {
-        ///grid instead of grid so witdh is flexible
+        ///grid instead of h-stack so width is flexible
         LazyVGrid(columns: columns, content: {
             ForEach(0..<5) { i in
                 NextWeekDay(weather: weathers[i])
@@ -218,6 +218,33 @@ struct ToggleButton: View {
                 .cornerRadius(15)
                 .shadow(radius: 10)
             
+        }
+    }
+}
+
+
+
+
+//For Unit testing only
+enum Vorzeichen {
+    case positiv, negative
+}
+enum CustomError: Error {
+    case isZero
+}
+struct ForUnitTestOnly {
+    func abs(num: Int, sign: Vorzeichen) throws -> Int? {
+        guard num != 0 else {
+            throw CustomError.isZero
+        }
+        guard num != -1 else {
+            return nil
+        }
+        switch sign {
+        case Vorzeichen.positiv:
+            return num < 0 ? -1 * num : num
+        case Vorzeichen.negative:
+            return num < 0 ? num : -1 * num
         }
     }
 }
